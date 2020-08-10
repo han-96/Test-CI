@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Test to Code Intensive</title>
+</head>
+<body>
+<h1>A. Problem Solving</h1>
+<h2>Task 1</h2>
+<h2>Task 2</h2>
+<script>
+    // console.log("A. Problem Solving");
+    // console.log("Task 1:");
+    // function findOppositeNumber(n, firstNum) {
+    //     let oppositeNum;
+    //     if (firstNum <= (n/2)){
+    //         oppositeNum = firstNum + n/2
+    //     }
+    //     else {
+    //         oppositeNum = firstNum - n/2
+    //     }        
+    //     return oppositeNum;
+    // }
+
+    // console.log("Chương trình tính số đối diện với firsNnum trong dãy n số nguyên liên tiếp được biểu diễn trên vòng tròn");
+    // let n = prompt("Nhập n: ");
+    // let firstNum = prompt("Nhập firstNum: ");
+    // n = parseInt(n);
+    // firstNum = parseInt(firstNum);
+    // console.log("Giá trị của số đối diện cần tìm là: ");
+    // console.log(findOppositeNumber(n,firstNum));
+
+    console.log("Task 2:")
+    function merge2String(s1, s2) {
+        let mergedString = ""
+        if (s1.length <= s2.length) {
+            for (let i = 0; i < s1.length; i++) {
+                mergedString = mergedString + s1[i] + s2[i]
+            }
+            for (let j = s1.length; j < s2.length; j++) {
+                mergedString = mergedString + s2[j]
+            }
+        } else {
+            for (let i = 0; i < s2.length; i++) {
+                mergedString = mergedString + s1[i] + s2[i]
+            }
+            for (let j = s2.length; j < s1.length; j++) {
+                mergedString = mergedString + s1[j]
+            }
+        }
+        return mergedString
+    }
+
+    console.log("Chương trình ghép 2 chuỗi nhập vào từ bàn phím thành một chuỗi mới chứa các ký tự xen kẽ cùng vị trí của 2 chuỗi với nhau")
+    let s = prompt("Nhập vào chuỗi thứ nhất: ")
+    let sa = prompt("Nhập vào chuỗi thứ hai: ")
+    console.log("Kết quả là: ")
+    console.log(merge2String(s, sa))
+</script>
+</body>
+</html>
